@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+html {
+  font-size: 13.333333333333333333333vw;
+}
+body {
+  font-size: .24rem;
+}
+html,
+body {
+  user-select: none;
+  font-family: PingFang SC;
+  font-weight: 400;
+}
+
+// 淡入淡出效果
+.fade-enter-active,
+.fade-leave-active {
+  transition: all .3s
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+
+// 弹窗背景色
+.pop_bg {
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, .7)
+}
+
+//弹窗容器
+.pop_container {
+  position: absolute;
+  top: 50%;
+
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  background: #fff;
+  transform: translate(-50%, -50%);
+}
+
+//小手动效
+@keyframes hand_scale{
+  0%,100%{
+    transform: scale(1.2);
+  }
+  50%{
+    transform: scale(1);
+  }
+}
+//光圈动效
+@keyframes hand_light{
+  0%{
+    transform: scale(1);
+    opacity:100;
+  }
+  100%{
+    transform: scale(1.8) ;
+    opacity:0;
+  }
+}

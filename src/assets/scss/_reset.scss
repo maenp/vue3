@@ -1,0 +1,82 @@
+//reset
+@charset "utf-8";
+/*h5清除默认样式*/
+html {
+  background: #ffffff;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+html * {
+  outline:none;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+  vertical-align: top;
+}
+body {
+  -webkit-text-size-adjust: none;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  -webkit-overflow-scrolling : touch;
+  position: relative;
+}
+body * { max-height: 999999px; }
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC","Helvetica Neue",STHeiti,"Microsoft Yahei",Tahoma,Simsun,sans-serif;;
+  //height:100%;
+}
+*,
+*:before,
+*:after {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-user-select: -moz-none;
+  -webkit-touch-callout: none;
+  margin: 0;
+  padding: 0;
+  -ms-touch-action: pan-y;  }
+body, h1, h2, h3, h4, h5, h6, hr, p, dl, dt, dd, ul, ol, li, pre, form, button, input, textarea, th, td {
+  margin: 0;
+  padding: 0;
+}
+body,button, input, select, textarea  {
+  vertical-align: text-top;
+  outline:none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none ;
+  box-shadow: none ;
+  -webkit-appearance: none;
+  appearance: none;
+}
+textarea{resize: none;  }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal;}
+address, cite, dfn, em, var { font-style: normal; }
+code, kbd, pre, samp { font-family: courier new, courier, monospace; }
+ul, ol { list-style: none; }
+a { text-decoration: none;color: #333333; }
+i{font-style: normal;}
+b{font-weight:normal}
+sup { vertical-align: text-top; }
+sub { vertical-align: text-bottom; }
+fieldset, img { border: 0; }
+button, input, select, textarea { font-size: 100%; }
+table { border-collapse: collapse; border-spacing: 0; }
+article, aside, details, figcaption, figure, footer,header, menu, nav, section,
+summary, time, mark, audio, video {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.clear:before, .clear:after {display: table;line-height: 0;content: ""; }
+.clear:after {clear: both; }
+.ellipsis{white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.ellipsis2{text-overflow: -o-ellipsis-lastline;display: -webkit-box;/*! autoprefixer: off */-webkit-box-orient: vertical;/* autoprefixer: on */ -webkit-line-clamp: 2;overflow: hidden;text-overflow: ellipsis; }
+.fl{ float:left;}
+.fr{ float:right;}
+.pr{position: relative;}
+.pa{position: absolute;}
+::-webkit-input-placeholder {
+  font-size: 0.28rem;
+  color: #999999;
+}
+
