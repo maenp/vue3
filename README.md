@@ -1,4 +1,4 @@
-# 0928
+# vue-cli4+mobx+vant
 
 ## Project setup
 ```
