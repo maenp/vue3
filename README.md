@@ -1,4 +1,4 @@
-# vue-cli4+mobx+vant
+# 基于vue-cli4  vue3+vant 
 
 ## Project setup
 ```
